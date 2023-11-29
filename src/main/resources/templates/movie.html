@@ -2,9 +2,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Movie</title>
+<title>[[${movie.title}]]</title>
+<div th:insert="~{fragments/fragments :: imports}"></div>
 </head>
 <body>
-	<h1>Movie title: [[${title}]]</h1>
+	<h2>Movie id: [[${movie.id}]]</h2>
+	<h2>Movie title: [[${movie.title}]]</h2>
+	<a class="btn btn-primary" th:href="@{/movies}">Back</a>
 </body>
 </html>

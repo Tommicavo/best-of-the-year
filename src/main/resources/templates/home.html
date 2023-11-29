@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Home</title>
+<div th:insert="~{fragments/fragments :: imports}"></div>
 </head>
 <body>
-	<h1>Best of the year by [[${name}]]</h1>
+	<h1 class="py-3">Best of the year by [[${name}]]</h1>
+	<div class="d-flex justify-content-center align-items-center gap-3">		
+		<a class="btn btn-primary" th:href="@{/movies}">movies</a>
+		<a class="btn btn-primary" th:href="@{/songs}">songs</a>
+	</div>
 </body>
 </html>

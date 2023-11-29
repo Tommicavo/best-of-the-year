@@ -2,9 +2,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Song</title>
+<title>[[${song.title}]]</title>
+<div th:insert="~{fragments/fragments :: imports}"></div>
 </head>
 <body>
-	<h1>Song title: [[${title}]]</h1>
+	<h2>Song id: [[${song.id}]]</h2>
+	<h2>Song title: [[${song.title}]]</h2>
+	<a class="btn btn-primary" th:href="@{/songs}">Back</a>
 </body>
 </html>

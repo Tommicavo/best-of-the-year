@@ -1,0 +1,9 @@
+@charset "ISO-8859-1";
+body{
+	background-color: pink;
+	text-align: center;
+}
+
+ul{
+	list-style-type: none;
+}

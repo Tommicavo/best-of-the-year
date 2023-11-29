@@ -3,9 +3,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Song List</title>
+<div th:insert="~{fragments/fragments :: imports}"></div>
 </head>
 <body>
 	<h1>Song title list</h1>
-	<p>[[${songTitles}]]</p>
+	<div th:replace="fragments/fragments :: list(${songs}, '/songs')"></div>
+	<a class="btn btn-primary" th:href="@{/}">home</a>
 </body>
 </html>
